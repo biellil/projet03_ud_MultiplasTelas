@@ -1,6 +1,4 @@
-import 'package:flutter/animation.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/material/colors.dart';
+import 'package:flutter/material.dart';
 
 class Category {
   final String id;

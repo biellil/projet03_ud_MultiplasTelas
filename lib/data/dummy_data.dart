@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-
 import '../models/category.dart';
 
-// ignore: unnecessary_const
-const DUMMY_CATEGORIES = const [
+const dummyCategories = [
   Category(
     id: 'c1',
     title: 'Italiano',
