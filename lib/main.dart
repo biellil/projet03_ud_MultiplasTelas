@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Vamos Cozinhar?',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch().copyWith(
-          primary: Colors.pink,
+          primary: Color.fromARGB(255, 0, 0, 0),
           secondary: Colors.amber,
         ),
         canvasColor: const Color.fromRGBO(255, 254, 229, 1),
