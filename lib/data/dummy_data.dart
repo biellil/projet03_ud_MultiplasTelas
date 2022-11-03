@@ -1,25 +1,19 @@
 import 'package:flutter/material.dart';
 import '../models/category.dart';
 import '../models/meal.dart';
-//import 'package:rainbow_color/rainbow_color.dart';
 
 
 
 const dummyCategories = [
-  var rb = Rainbow(spectrum: [Color(0xFFFF0000), Color(0xFFFFFFFF), Color(0xff00ff00)],
-                 rangeStart: -10,
-                 rangeEnd: 10);
-Color warmColor = rb[-9.32];
-Color coldColor = rb[8.44];
   Category(
     id: 'c1',
     title: 'Italiano',
-    color: Color warmColor,
+    color: Colors.purple,
   ),
   Category(
     id: 'c2',
     title: 'Rápido & Fácil',
-    color: Color coldColo,
+    color: Colors.red,
   ),
   Category(
     id: 'c3',
