@@ -58,8 +58,8 @@ class _MyAppState extends State<MyApp> {
       title: 'Vamos Cozinhar?',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch().copyWith(
-          primary: Colors.black,
-          secondary: Colors.purple,
+          primary: Colors.pink,
+          secondary: Colors.amber,
         ),
         canvasColor: const Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',

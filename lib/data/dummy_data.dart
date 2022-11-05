@@ -21,7 +21,7 @@ const dummyCategories = [
   Category(
     id: 'c4',
     title: 'Alemã',
-    color: Colors.pink,
+    color: Colors.amber,
   ),
   Category(
     id: 'c5',
@@ -46,7 +46,7 @@ const dummyCategories = [
   Category(
     id: 'c9',
     title: 'Francesa',
-    color: Color.fromARGB(255, 6, 197, 48),
+    color: Colors.pink,
   ),
   Category(
     id: 'c10',
