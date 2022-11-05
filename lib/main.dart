@@ -32,19 +32,14 @@ class _MyAppState extends State<MyApp> {
         final filterLactose = settings.isLactoseFree && !meal.isLactoseFree;
         final filterVegan = settings.isVegan && !meal.isVegan;
         final filterVegetarian = settings.isVegetarian && !meal.isVegetarian;
-        return !filterGluten &&
-            !filterLactose &&
-            !filterVegan &&
-            !filterVegetarian;
+        return !filterGluten && !filterLactose && !filterVegan && !filterVegetarian;
       }).toList();
     });
   }
 
   void _toggleFavorite(Meal meal) {
     setState(() {
-      _favoriteMeals.contains(meal)
-          ? _favoriteMeals.remove(meal)
-          : _favoriteMeals.add(meal);
+      _favoriteMeals.contains(meal) ? _favoriteMeals.remove(meal) : _favoriteMeals.add(meal);
     });
   }
 
@@ -58,8 +53,8 @@ class _MyAppState extends State<MyApp> {
       title: 'Vamos Cozinhar?',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch().copyWith(
-          primary: Colors.pink,
-          secondary: Colors.amber,
+          primary: Color.fromARGB(255, 0, 0, 0),
+          secondary: Colors.purple,
         ),
         canvasColor: const Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
@@ -72,10 +67,8 @@ class _MyAppState extends State<MyApp> {
       ),
       routes: {
         AppRoutes.home: (ctx) => TabsScreen(_favoriteMeals),
-        AppRoutes.categoriesMeals: (ctx) =>
-            CategoriesMealsScreen(_availableMeals),
-        AppRoutes.mealDetail: (ctx) =>
-            MealDetailScreen(_toggleFavorite, _isFavorite),
+        AppRoutes.categoriesMeals: (ctx) => CategoriesMealsScreen(_availableMeals),
+        AppRoutes.mealDetail: (ctx) => MealDetailScreen(_toggleFavorite, _isFavorite),
         AppRoutes.settings: (ctx) => SettingsScreen(settings, _filterMeals),
       },
     );
